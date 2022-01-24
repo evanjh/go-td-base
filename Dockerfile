@@ -3,7 +3,7 @@ FROM golang:1.16-buster
 # Define working directory.
 WORKDIR /go/src/td
 
-ARG ENV
+ENV CXXFLAGS=""
 ADD ./sources.list /etc/apt/sources.list.save
 RUN cp /etc/apt/sources.list /etc/apt/sources.list.bak \
     && mv /etc/apt/sources.list.save /etc/apt/sources.list
