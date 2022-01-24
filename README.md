@@ -2,6 +2,8 @@
 
 [go-tdlib](https://github.com/zelenin/go-tdlib) with docker.
 
+https://tdlib.github.io/td/build.html?language=Go
+
 ```bash
 apt-get update
 apt-get upgrade
