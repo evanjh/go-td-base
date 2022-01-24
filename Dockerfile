@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
     curl \
 	# td
-	make git zlib1g-dev libssl-dev gperf php-cli cmake g++ \
+	make zlib1g-dev libssl-dev gperf cmake clang libc++-dev libc++abi-dev \
 	# supervisor
     python-pip \
     rsyslog \
