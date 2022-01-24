@@ -7,7 +7,7 @@ update:
 
 .PHONY: build
 build:
-	docker build -t $(image_name):$(image_tag) .
+	docker build --platform=linux/amd64 -t $(image_name):$(image_tag) .
 	docker tag $(image_name):$(image_tag) $(image_name):latest
 
 .PHONY: publish
